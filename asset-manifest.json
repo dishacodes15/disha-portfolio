@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/disha-portfolio/static/css/main.0eafbb52.css",
+    "main.js": "/disha-portfolio/static/js/main.d88abb75.js",
+    "static/media/avatar.jpg": "/disha-portfolio/static/media/avatar.41fb403548f5b636ea48.jpg",
+    "index.html": "/disha-portfolio/index.html",
+    "main.0eafbb52.css.map": "/disha-portfolio/static/css/main.0eafbb52.css.map",
+    "main.d88abb75.js.map": "/disha-portfolio/static/js/main.d88abb75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0eafbb52.css",
+    "static/js/main.d88abb75.js"
+  ]
+}
