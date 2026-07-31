@@ -200,7 +200,7 @@ function TopBar({ theme, setTheme }) {
             <div className="top-bar" data-testid="top-bar">
                 <span className="dot" />
                 <span>disha.exe</span>
-                <span style={{ opacity: 0.55, marginLeft: 8 }}>
+                <span className="top-bar-sub" style={{ opacity: 0.55, marginLeft: 8 }}>
                     // now playing: system design + DSA
                 </span>
             </div>
