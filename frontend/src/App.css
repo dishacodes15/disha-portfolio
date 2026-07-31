@@ -182,6 +182,11 @@
     border: 2px solid hsl(var(--ink));
     animation: pulse 1.6s ease-in-out infinite;
 }
+.top-bar-sub { display: none; }
+@media (min-width: 1500px) {
+    .top-bar-sub { display: inline; }
+}
+
 @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50%      { opacity: 0.55; transform: scale(0.85); }
