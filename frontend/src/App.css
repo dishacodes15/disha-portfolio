@@ -323,7 +323,7 @@
 .pixel-gb {
     position: absolute;
     right: 6vw;
-    top: 30vh;
+    top: 22vh;
     width: 240px;
     height: 290px;
     background: hsl(var(--paper-2));
