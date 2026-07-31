@@ -203,6 +203,7 @@ function TopBar({ theme, setTheme }) {
                 <span className="top-bar-sub" style={{ opacity: 0.55, marginLeft: 8 }}>
                     // now playing: system design + DSA
                 </span>
+
             </div>
             <button
                 className="gb-toggle"
