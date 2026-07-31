@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* ---------- LIGHT MODE — Disha palette ----------
+           bg #f2ecd8 · surface #fffdf6 · surface-2 #eae1c6
+           text #241f1a · muted #6b6459
+           pink #c62368 · pink-dim #e8a4c0
+           green #296b46 · green-dim #8fc9a3
+        */
+        --paper: 45 43% 88%;      /* #f2ecd8 */
+        --paper-2: 40 39% 85%;    /* #eae1c6 */
+        --surface: 44 43% 99%;    /* #fffdf6 */
+        --ink: 30 16% 13%;        /* #241f1a */
+        --ink-soft: 38 20% 28%;   /* #4d4436 — darkened from #6b6459 for readability */
+        --pink: 336 70% 46%;      /* #c62368 */
+        --pink-soft: 335 60% 79%; /* #e8a4c0 */
+        --green: 146 44% 29%;     /* #296b46 */
+        --green-lime: 139 39% 67%;/* #8fc9a3 */
+        --tape: 45 90% 70%;
+        --tape-2: 335 75% 82%;
+        --edge: 30 16% 13%;
+
+        --background: var(--paper);
+        --foreground: var(--ink);
+        --card: var(--surface);
+        --card-foreground: var(--ink);
+        --popover: var(--surface);
+        --popover-foreground: var(--ink);
+        --primary: var(--ink);
+        --primary-foreground: var(--paper);
+        --secondary: var(--paper-2);
+        --secondary-foreground: var(--ink);
+        --muted: var(--paper-2);
+        --muted-foreground: var(--ink-soft);
+        --accent: var(--pink);
+        --accent-foreground: var(--surface);
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 30 16% 13%;
+        --input: 30 16% 13%;
+        --ring: var(--pink);
+        --radius: 0.25rem;
+    }
+
+    .dark {
+        /* ---------- DARK MODE — Disha palette ----------
+           bg #0a0d0a · surface #121810 · surface-2 #182016
+           text #e9ecd6 · muted #8f9884
+           pink #ff4d94 · pink-dim #c93875
+           green #4dff8f · green-dim #2fa860
+        */
+        --paper: 120 13% 4%;      /* #0a0d0a */
+        --paper-2: 105 20% 8%;    /* #121810 */
+        --surface: 108 18% 9%;    /* #182016 */
+        --ink: 65 32% 88%;        /* #e9ecd6 */
+        --ink-soft: 90 12% 66%;   /* #a5ae9d — lightened from #8f9884 for readability */
+        --pink: 336 100% 65%;     /* #ff4d94 */
+        --pink-soft: 335 57% 50%; /* #c93875 */
+        --green: 140 57% 42%;     /* #2fa860 */
+        --green-lime: 140 100% 65%; /* #4dff8f */
+        --tape: 65 32% 88%;
+        --tape-2: 336 100% 65%;
+        --edge: 65 32% 88%;
+
+        --background: var(--paper);
+        --foreground: var(--ink);
+        --card: var(--paper-2);
+        --card-foreground: var(--ink);
+        --popover: var(--paper-2);
+        --popover-foreground: var(--ink);
+        --primary: var(--ink);
+        --primary-foreground: var(--paper);
+        --secondary: var(--paper-2);
+        --secondary-foreground: var(--ink);
+        --muted: var(--paper-2);
+        --muted-foreground: var(--ink-soft);
+        --accent: var(--pink);
+        --accent-foreground: var(--paper);
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 65 32% 88%;
+        --input: 65 32% 88%;
+        --ring: var(--pink);
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+        -webkit-font-smoothing: antialiased;
+    }
+    html { scroll-behavior: auto; }
+    body {
+        @apply bg-background text-foreground;
+        margin: 0;
+        font-family: "Space Mono", "Courier New", monospace;
+        font-size: 16px;
+        line-height: 1.65;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background: hsl(var(--pink));
+        color: hsl(var(--paper));
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] { display: contents !important; }
+    [data-debug-wrapper="true"] > * {
+        margin: inherit; padding: inherit; gap: inherit;
+        border-width: inherit; border-style: inherit; border-color: inherit;
+    }
+}
